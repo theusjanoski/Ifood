@@ -1,3 +1,29 @@
+.cabeçalho {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding: 10px;
+}
+
+.menu__nav {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    gap: 30px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    gap: 15px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -54,4 +80,34 @@ button:hover {
 
 .link-button:hover {
     color: red;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    padding: 30px;
+    gap: 400px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-direction: column;
+
+}
+
+.rodape__titulo, .rodape__link {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.endereço {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 12px;
 }
