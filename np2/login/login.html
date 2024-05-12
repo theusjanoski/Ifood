@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="script_user.js" defer></script>
 </head>
 <body>
-    
+    <div class="login">
+        <form id="loginForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <button type="button" id="loginButton">Entrar</button>
+            <button type="button"><a href="cadastro_user.html">Cadastrar Cliente</a></button>
+            <button type="button"><a href="cadastro_emp.html">Cadastrar Empresa</a></button>
+        </form>
+    </div>
+
 </body>
 </html>

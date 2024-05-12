@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/np2/produtos/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="cadastro">
+        <form id="cadastroForm">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+    
+            <label for="confirmaSenha">Confirme a senha:</label>
+            <input type="password" id="confirmaSenha" name="confirmaSenha" required>
+    
+            <button type="button" onclick="salvarDados()">Salvar</button>
+            <button type="button" onclick="limparDados()">Limpar</button>
+            <button type="button" onclick="limparDados()">Cancelar</button>
+        </form>
+
+        <script>
+            function salvarDados() {
+                alert('Dados salvos com sucesso!');
+                //INSERT INTO usuario (id, nome, email, datanasc, senha) VALUES   
+            }
+    
+            function limparDados() {
+                document.getElementById('cadastroForm').reset();
+            }
+        </script>
+    </div>
+
+    <footer class="rodape">
+        <div class="redes-sociais">
+            <h2 class="rodape__titulo">Redes Sociais</h2>
+            <a href="#" class="rodape__link">Instagram</a>
+            <a href="#" class="rodape__link">Facebook</a>
+            <a href="#" class="rodape__link">Linkedin</a>
+        </div>
+        <div class="endereço">
+            <p>CEP:18108-040</br>Estado: São Paulo</br>Cidade: Sorocaba</br>Bairo: Brigadeiro Tobias</br>Rua: Antonio Figueiredo n°107</br>Tel.:(15)996102891</p>
+        </div>
+    </footer>   
+
+</body>
+</html>
