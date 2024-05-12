@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>NP1</title>
+</head>
+<body>
+    <header class="cabeçalho">
+    <img src="/img/IFood.png" alt="">
+    </header>
+    <nav class="menu__nav">
+        <a href="inicio.html" class="menu__link">Inicio</a>
+        <a href="produtos.html"class="menu__link">Produtos</a>
+        <a href="/cadastro.html"class="menu__link">Cadastro</a>
+    </nav>
+
+    <div class="cadastro">
+        <form id="cadastroForm">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="nome">Email:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+            
+            <label for="nome">Senha:</label>
+            <input type="password" id="nome" name="nome" required>
+    
+            <label for="estudante">Aceitar o Termos de Condições</label>
+            <input type="checkbox" id="estudante" name="estudante">
+    
+            <button type="button" onclick="salvarDados()">Salvar</button>
+            <button type="button" onclick="limparDados()">Limpar</button>
+            <button type="button" onclick="limparDados()">Cancelar</button>
+        </form>
+
+        <script>
+            function salvarDados() {
+                alert('Dados salvos com sucesso!');
+                //INSERT INTO usuario (id, nome, email, datanasc, senha) VALUES   
+            }
+    
+            function limparDados() {
+                document.getElementById('cadastroForm').reset();
+            }
+        </script>
+    </div>
+
+    <footer class="rodape">
+        <div class="redes-sociais">
+            <h2 class="rodape__titulo">Redes Sociais</h2>
+            <a href="#" class="rodape__link">Instagram</a>
+            <a href="#" class="rodape__link">Facebook</a>
+            <a href="#" class="rodape__link">Linkedin</a>
+        </div>
+        <div class="endereço">
+            <p>CEP:18108-040</br>Estado: São Paulo</br>Cidade: Sorocaba</br>Bairo: Brigadeiro Tobias</br>Rua: Antonio Figueiredo n°107</br>Tel.:(15)996102891</p>
+        </div>
+    </footer>   
+
+</body>
+</html>
