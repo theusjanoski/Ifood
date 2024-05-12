@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <script src="script_user.js" defer></script>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
+    <header class="cabeçalho">
+        <img src="/img/IFood.png" alt="">
+    </header>
     <div class="login">
         <form id="loginForm">
             <label for="nome">Nome:</label>
@@ -15,11 +18,10 @@
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="senha" required>
             
-            <button type="button" id="loginButton">Entrar</button>
-            <button type="button"><a href="cadastro_user.html">Cadastrar Cliente</a></button>
-            <button type="button"><a href="cadastro_emp.html">Cadastrar Empresa</a></button>
+            <button type="submit" id="loginButton">Entrar</button>
+            <a href="cadastro_user.html" class="link-button">Cadastrar Cliente</a>
+            <a href="cadastro_emp.html" class="link-button">Cadastrar Empresa</a>
         </form>
     </div>
-
 </body>
 </html>

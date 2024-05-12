@@ -1,13 +1,11 @@
-document.getElementById('nome').addEventListener('input', function() {
-    var nome = document.getElementById('nome').value;
-    var senha = document.getElementById('senha').value;
-    var loginButton = document.getElementById('loginButton');
-    loginButton.disabled = nome === '' || password === '';
-  });
+function habilitarBotao() {
+  var nome = document.getElementById("nome");
+  var senha = document.getElementById("senha");
+  var loginButton = document.getElementById("loginButton");
 
-  document.getElementById('senha').addEventListener('input', function() {
-    var nome = document.getElementById('nome').value;
-    var senha = document.getElementById('senha').value;
-    var loginButton = document.getElementById('loginButton');
-    loginButton.disabled = nome === '' || senha === '';
-  });
+  if (nome.value.trim() !== "" && senha.value.trim() !== "") {
+    loginButton.disabled = false;
+  } else {
+    loginButton.disabled = true;
+  }
+}
