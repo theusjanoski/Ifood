@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuário</title>
     <link rel="stylesheet" href="user_style.css">
-    <script src="/np2/cadastros/script_user.js"></script>
+    <script src="/np2/cadastros/script_user.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -13,14 +13,18 @@
         <form id="cadastroForm">
             <label for="username">Nome de Usuário:</label>
             <input type="text" id="username" name="username" required minlength="4">
+
             <label for="password">Senha:</label>
             <input type="password" id="password" name="password" required minlength="6">
+
             <label for="confirmPassword">Confirme a Senha:</label>
             <input type="password" id="confirmPassword" name="confirmPassword" required>
+
             <div id="message"></div>
+
             <button type="button" id="saveButton" disabled>Salvar</button>
             <button type="button" id="clearButton">Limpar</button>
-            <a href="#" id="backLink" class="texto-voltar">Voltar</a>
+            <a href="/np2/login/login.html" class="texto-voltar">Voltar</a>
         </form>
     </div>
     <footer class="rodape">
@@ -34,6 +38,5 @@
             <p>CEP:18108-040</br>Estado: São Paulo</br>Cidade: Sorocaba</br>Bairo: Brigadeiro Tobias</br>Rua: Antonio Figueiredo n°107</br>Tel.:(15)996102891</p>
         </div>
     </footer>
-    <script src="/cadastros/script-user.js" defer></script>
 </body>
 </html>
