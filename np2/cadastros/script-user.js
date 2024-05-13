@@ -44,7 +44,6 @@ function clearForm() {
 
 saveButton.addEventListener('click', function() {
     showMessage('Cadastro realizado com sucesso!');
-    // Aqui você pode adicionar código para enviar os dados do formulário para o backend
 });
 
 clearButton.addEventListener('click', clearForm);
@@ -55,5 +54,4 @@ confirmPasswordInput.addEventListener('input', validateForm);
 
 backLink.addEventListener('click', function(event) {
     event.preventDefault();
-    // Aqui você pode adicionar código para redirecionar o usuário para a página desejada
 });

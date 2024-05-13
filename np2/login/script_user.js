@@ -10,10 +10,10 @@ function habilitarBotao() {
   }
 }
 
-function fazerLogin() {
-      window.location.href = "/np2/inicio/index.html";
-}
+document.getElementById("loginButton").addEventListener("click", function(event){
+  event.preventDefault();
+  window.location.href = '/np2/inicio/inicio.html';
+});
 
 document.getElementById("nome").addEventListener("input", habilitarBotao);
 document.getElementById("senha").addEventListener("input", habilitarBotao);
-document.getElementById("loginButton").addEventListener("click", fazerLogin);
