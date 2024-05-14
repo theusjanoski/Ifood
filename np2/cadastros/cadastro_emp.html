@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./emp_style.css">
     <title>Cadastro</title>
+    <script src="/np2/cadastros/script_emp.js" defer></script>
 </head>
 <body>
     <div class="cadastro">
@@ -98,6 +99,26 @@
                 <button type="button" onclick="limparDados()">Cancelar</button>
             </div>
         </form>
+    </div>
+
+    <div id="mensagem" style="display: none;"></div>
+
+    <div class="tabelaEmpresas">
+        <table id="tabelaDados">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Especialidade</th>
+                    <th>CNPJ</th>
+                    <th>Telefone</th>
+                    <th>Responsável</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui serão inseridas as linhas da tabela -->
+            </tbody>
+        </table>
     </div>
 
     <footer class="rodape">
