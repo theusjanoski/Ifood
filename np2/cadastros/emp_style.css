@@ -44,10 +44,10 @@ body {
 
 form {
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 700px;
+    width: 400px;
 }
 
 
@@ -87,41 +87,40 @@ button:hover {
 
 .nomeEmp{
     display:flex;
-    justify-content: left;
-    gap: 60px;
+    gap: 30px;
 }
 
 .dadosEmp{
     display: flex;
-    justify-content: left;
-    gap: 60px;
+    gap: 30px;
 }
 
 .localEmp{
     display:flex;
-    justify-content: left;
-    gap: 60px; 
+    gap: 30px;
 }
 
 .estadoEmp{
     display:flex;
-    justify-content: left;
-    gap: 60px;
+    gap: 30px;
+}
+
+.compleEmp{
+    display:flex;
+    gap: 30px;
 }
 
 .ruaEmp{
-    display:flex;
-    justify-content: left; 
+    width: 100%;
 }
 
 .emailEmp{
-    width: 420px;
+    width: 100%;
 }
 
-.numeroEmp{
-    width: 50px;
-}
-
-.ruaEmp{
-    width: 420px;
+.buttons{
+    display: flex;
+    justify-content:center;
+    gap: 15px;
+    margin-top: 30px;
 }
