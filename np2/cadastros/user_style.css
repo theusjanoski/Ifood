@@ -1,3 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
 .cabeçalho {
     display: flex;
     justify-content: center;
@@ -13,6 +20,7 @@
     border-radius: 5px;
     margin-bottom: 150px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    background-color: white;
 }
 
 form {
