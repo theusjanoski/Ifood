@@ -5,6 +5,7 @@ function salvarDados() {
         telefone: document.getElementById('telefone').value,
         responsavel: document.getElementById('responsavel').value,
         email: document.getElementById('email').value,
+        cep: document.getElementById('cep').value,
         estado: document.getElementById('estado').value,
         cidade: document.getElementById('cidade').value,
         bairro: document.getElementById('bairro').value,
@@ -22,8 +23,8 @@ function salvarDados() {
 function adicionarLinhaTabela(dados) {
     var tabela = document.getElementById('tabelaDados').getElementsByTagName('tbody')[0];
     var novaLinha = tabela.insertRow(tabela.rows.length);
-    var colunas = ['nome', 'tipo', 'telefone', 'responsavel', 'email', 'endereco'];
     var endereco = `${dados.rua}, ${dados.numero}, ${dados.complemento}, ${dados.bairro}, ${dados.cidade}, ${dados.estado}`;
+    var colunas = ['nome', 'tipo', 'telefone', 'responsavel', 'email', 'endereco'];
     colunas.forEach(function(coluna) {
         var novaCelula = novaLinha.insertCell();
         if (coluna === 'endereco') {
@@ -52,5 +53,5 @@ function limparDados() {
 
 // Função para buscar cidades de acordo com o estado selecionado
 function buscarCidades() {
-    // Você deve implementar a lógica para buscar e preencher dinamicamente as cidades
+    // Você deve
 }
