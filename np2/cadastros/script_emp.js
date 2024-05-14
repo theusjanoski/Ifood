@@ -129,5 +129,5 @@ async function preencherEndereco() {
     }
 }
 
-// Adiciona um ouvinte de evento ao campo de entrada de CEP para acionar a função preencherEndereco().
+// Adiciona evento ao campo de entrada de CEP para acionar a função preencherEndereco().
 document.getElementById('cep').addEventListener('input', preencherEndereco);
