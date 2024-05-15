@@ -25,7 +25,7 @@
                 </div>
                 
                 <div>
-                    <label for="ramo">Especialidade:</label>
+                    <label for="ramo">Categoria:</label>
                     <input type="text" id="ramo" name="ramo" required>
                 </div>
 
@@ -61,18 +61,21 @@
                     <label for="cep">CEP:</label>
                     <input type="number" id="cep" name="cep" required>
                 </div>
+                <div>
+                    <label for="ufSelect">Selecione a UF:</label>
+                    <select class="selectUF" id="ufSelect" onchange="buscarCidades()">
+                        <option value="">Selecione uma UF</option>
+                    </select>
+                </div>
             </section>
             
             <section class="estadoEmp">
-                <label for="ufSelect">Selecione a UF:</label>
-                <select id="ufSelect" onchange="buscarCidades()">
-                    <option value="">Selecione uma UF</option>
-                </select>
-
-                <label for="cidadeSelect">Selecione a Cidade:</label>
-                <select id="cidadeSelect">
-                    <option value="">Selecione uma cidade</option>
-                </select>
+                <div>
+                    <label for="cidadeSelect">Selecione a Cidade:</label>
+                    <select class="selectCid" id="cidadeSelect">
+                        <option value="">Selecione uma cidade</option>
+                    </select>
+                </div>
                 <div>
                     <label for="bairro">Bairro:</label>
                     <input type="text" id="bairro" name="bairro" required>
@@ -109,11 +112,11 @@
         <table id="tabelaDados">
             <thead>
                 <tr>
-                    <th>Nome</th>
-                    <th>Especialidade</th>
-                    <th>E-mail</th>
-                    <th>CNPJ</th>
-                    <th>Endereço</th>
+                    <th class="textTabela">Nome</th>
+                    <th class="textTabela">Categoria</th>
+                    <th class="textTabela">E-mail</th>
+                    <th class="textTabela">CNPJ</th>
+                    <th class="textTabela">Endereço</th>
                 </tr>
             </thead>
             <tbody>

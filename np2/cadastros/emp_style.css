@@ -66,7 +66,6 @@ label {
 }
 
 input{
-    /* width: 100%;*/
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
@@ -83,6 +82,7 @@ button {
     cursor: pointer;;
 }
 
+
 button:hover {
     background-color: rgb(122, 6, 6);
 }
@@ -93,36 +93,12 @@ button:hover {
     font-size: 12px;
 }
 
-.nomeEmp{
+.nomeEmp, .dadosEmp, .localEmp, .estadoEmp, .compleEmp{
     display:flex;
     gap: 30px;
 }
 
-.dadosEmp{
-    display: flex;
-    gap: 30px;
-}
-
-.localEmp{
-    display:flex;
-    gap: 30px;
-}
-
-.estadoEmp{
-    display:flex;
-    gap: 30px;
-}
-
-.compleEmp{
-    display:flex;
-    gap: 30px;
-}
-
-.ruaEmp{
-    width: 100%;
-}
-
-.emailEmp{
+.ruaEmp, .emailEmp{
     width: 100%;
 }
 
@@ -137,6 +113,8 @@ button:hover {
     margin: 20px auto; 
     width: 80%; 
     border-collapse: collapse; 
+    display: flex;
+    justify-content: center;
 }
 
 .tabelaEmpresas th, .tabelaEmpresas td {
@@ -146,15 +124,19 @@ button:hover {
 }
 
 .tabelaEmpresas th {
-    background-color: #f2f2f2; 
-    font-weight: bold; 
+    background-color: rgba(243, 243, 243, 0.289); 
 }
 
-.tabelaEmpresas th:last-child,
-.tabelaEmpresas td:last-child {
-    border-right: none; 
+
+.textTabela{
+    font-weight: lighter;
 }
 
-.tabelaEmpresas tr:last-child {
-    border-bottom: none;
+.selectUF, .selectCid{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
